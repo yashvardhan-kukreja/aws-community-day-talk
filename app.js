@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
     res.json({
         meta: {
             success: true,
-            message: "Welcome to the AWS Community Day ANZ"
+            message: "Welcome to the AWS Community Day ANZ - Build 21"
         }
     });
 });
