@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: aws-community-day-service
+  labels:
+    app: aws-community-day
+spec:
+  selector:
+    app: aws-community-day-app
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8000
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aws-community-day-deployment
+  labels:
+    app: aws-community-day
+spec:
+  selector:
+    matchLabels:
+      app: aws-community-day-app
+  replicas: 4
+  template:
+    metadata:
+      labels:
+        app: aws-community-day-app
+    spec:
+      containers:
+      - name: aws-community-day-container
+        image: yashvardhankukreja/aws-community-day:latest
+        ports:
+        - containerPort: 8000
