@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~
+cd ~/
 sudo rm -rf aws-community-day-talk
 git clone git@github.com:yashvardhan-kukreja/aws-community-day-talk.git
 cd aws-community-day-talk
