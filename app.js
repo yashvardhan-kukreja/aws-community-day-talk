@@ -9,7 +9,7 @@ require("dotenv").config({path: path.resolve(__dirname) + "/.env"});
 app.get("/", (req, res) => {
     res.json({
         meta: {
-            success: "something not boolean",
+            success: true,
             message: "Welcome to the AWS Community Day ANZ"
         }
     });
