@@ -1,5 +1,5 @@
 # AWS Community Day - ANZ
-
+<a href="https://drive.google.com/file/d/1Oei5036ovoVxE-byBcBLu9rZLcd9BSgT/view?usp=sharing">Link to the talk</a>
 ---
 
 Here's a quick walkthrough of all the required resources, links and explanations associated with the sample project/code which is being dealth with in the talk
